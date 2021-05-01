@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-linear-gradient(
+    31deg,
+    rgba(24, 54, 80, 1) 0%,
+    rgba(24, 54, 80, 0.8995973389355743) 100%
+  );
+  background-attachment: fixed;
+}
+
+.container {
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Exo", sans-serif;
+  max-width: 1440px;
+  max-height: 100%;
+}
+.logo {
+  margin-bottom: -3%;
+  width: 25%;
+}
+.underliner {
+  width: 75%;
+  height: 2px;
+  background: -webkit-linear-gradient(
+    33deg,
+    rgba(177, 75, 236, 1) 0%,
+    rgba(1, 255, 164, 1) 100%
+  );
+}
+
+.psolana {
+  color: #00ffa3;
+  font-family: "Exo", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.links {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Exo", sans-serif;
+  font-size: large;
+  color: #00ffa3;
+}
+.discord {
+  opacity: 0.7;
+}
+.discord:hover {
+  opacity: 1;
+}
+.countdown {
+  margin-top: -3%;
+  width: 75%;
+}
+#twitch {
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #FF862D;
+}
+#twitch:hover {
+  color: #04e0ff;
+}
