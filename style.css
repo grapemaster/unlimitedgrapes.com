@@ -22,10 +22,12 @@ body {
   max-width: 1440px;
   max-height: 100%;
 }
+
 .logo {
   margin-bottom: -3%;
-  width: 25%;
+  width: 26%;
 }
+
 .underliner {
   width: 75%;
   height: 2px;
@@ -42,9 +44,11 @@ body {
   font-size: xx-large;
   text-align: center;
 }
+
 .medium{
  opacity: 0.7; 
 }
+
 .medium:hover {
   opacity: 1;
 }
@@ -58,22 +62,22 @@ body {
   font-size: large;
   color: #00ffa3;
 }
+
 .discord {
   opacity: 0.7;
 }
+
 .discord:hover {
   opacity: 1;
 }
-.countdown {
-  margin-top: -3%;
-  width: 75%;
-}
+
 #twitch {
   margin-left: 5px;
   margin-right: 5px;
   text-decoration: none;
   color: #FF862D;
 }
+
 #twitch:hover {
   color: #04e0ff;
 }
