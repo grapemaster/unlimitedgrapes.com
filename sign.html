@@ -23,6 +23,37 @@ const message = "Please sign this message for proof of address ownership.";
 const data = new TextEncoder().encode(message);
 let { signature } = await wallet.sign(data, 'utf8');
   </script>
+  <div className="App">
+      <h1>Wallet Adapter Demo</h1>
+      <div>Network: {network}</div>
+      <div>
+        Waller provider:{' '}
+        <input
+          type="text"
+          value={providerUrl}
+          onChange={(e) => setProviderUrl(e.target.value.trim())}
+        />
+      </div>
+      {selectedWallet && selectedWallet.connected ? (
+        <div>
+          <div>Wallet address: {selectedWallet.publicKey.toBase58()}.</div>
+          <button onClick={sendTransaction}>Send Transaction</button>
+          <button onClick={signMessage}>Sign Message</button>
+          <button onClick={() => selectedWallet.disconnect()}>Disconnect</button>
+        </div>
+      ) : (
+        <div>
+          <button onClick={() => setSelectedWallet(urlWallet)}>Connect to Wallet</button>
+          <button onClick={() => setSelectedWallet(injectedWallet)}>Connect to Injected Wallet</button>
+        </div>
+      )}
+      <hr />
+      <div className="logs">
+        {logs.map((log, i) => (
+          <div key={i}>{log}</div>
+        ))}
+      </div>
+    </div>
   <p class="psolana">This Solana Season <br>The Great Ape is coming <br>See you in the Hackathon.</p>
 
    <p class="links">Learn more about GRAPE at <a href="https://medium.com/great-ape" target="_blank" ><img class="medium" width=150px  src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png"></a></p>
