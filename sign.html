@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Great Ape - Grape</title>
+  <link rel="stylesheet" href="./style.css">
+ <script src="https://cdn.jsdelivr.net/npm/@project-serum/sol-wallet-adapter@0.2.0/dist/index.min.js"></script>
+  <script src="https://unpkg.com/@solana/web3.js@0.92.0/lib/index.iife.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <img class="logo" src="https://user-images.githubusercontent.com/83492120/116784188-36b9e900-aa93-11eb-8dba-f0015ca1706b.png">
+  <p class="underliner"></p>
+<script>
+  const providerUrl = 'https://www.sollet.io';
+const wallet = new Wallet(providerUrl);
+wallet.on('connect', publicKey => console.log('Connected to ' + publicKey.toBase58()));
+wallet.on('disconnect', () => console.log('Disconnected'));
+await wallet.connect();
 
+const message = "Please sign this message for proof of address ownership.";
+const data = new TextEncoder().encode(message);
+let { signature } = await wallet.sign(data, 'utf8');
+  </script>
+  <p class="psolana">This Solana Season <br>The Great Ape is coming <br>See you in the Hackathon.</p>
+
+   <p class="links">Learn more about GRAPE at <a href="https://medium.com/great-ape" target="_blank" ><img class="medium" width=150px  src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png"></a></p>
+  
+   <p class="links">Join our Discord and tune into <a id="twitch" href="https://www.twitch.tv/whalesfriend" target="_blank" >twitch.tv/whalesfriend</a> for more information about the project.</p>
+
+  <a class="discord" href="https://discord.gg/ZsTp6aMR" target="_blank"> <img width=150px src="https://cdn-bpdmo.nitrocdn.com/huOmQuvgltnrozmRiXkCfbikGAKKNLBZ/assets/static/optimized/rev-604f2af/wp-content/uploads/2020/11/Discord-Logo-700x394.png"></a>
+</div>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;400&display=swap" rel="stylesheet">
+
+<!-- partial -->
+  
+</body>
+</html>
