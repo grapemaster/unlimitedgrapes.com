@@ -4,13 +4,6 @@
   <meta charset="UTF-8">
   <title>The Great Ape - Grape</title>
   <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  <img class="logo" src="https://user-images.githubusercontent.com/83492120/116784188-36b9e900-aa93-11eb-8dba-f0015ca1706b.png">
-  <p class="underliner"></p>
 <script src="./solana-web3.js/lib/index.iife.js"></script>
 <script>
 const url = 'https://api.mainnet-beta.solana.com'
@@ -38,6 +31,11 @@ async function pageload() {
 }
 </script>
 </head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <img class="logo" src="https://user-images.githubusercontent.com/83492120/116784188-36b9e900-aa93-11eb-8dba-f0015ca1706b.png">
+  <p class="underliner"></p>
 <body onload="pageload()">
   <div style="float: left">Address:</div> <div id="address"> </div>
   <div style="float: left">Balance:</div> <div id="balance"> </div>
@@ -48,7 +46,6 @@ async function pageload() {
   <button onclick="alert('['+document.cookie+']');">
     Show Secret Key
   </button>
-</body>
   <p class="psolana">This Solana Season <br>The Great Ape is coming <br>See you in the Hackathon.</p>
 
    <p class="links">Learn more about GRAPE at <a href="https://medium.com/great-ape" target="_blank" ><img class="medium" width=150px  src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png"></a></p>
