@@ -39,10 +39,12 @@
 
 .navigation-clean .navbar-toggler {
   border-color: #ddd;
+  background: whitesmoke;
+  margin-bottom: 2%;
 }
 
 .navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
-  background: none;
+  background: #DC1FFF;
 }
 
 .navigation-clean.navbar-dark .navbar-toggler {
