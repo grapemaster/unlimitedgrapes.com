@@ -120,7 +120,7 @@
 }
 
 .navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item:hover {
-  background: rgb(48, 48, 48);
+  background: rgb(37, 37, 37);
   color: inherit;
 }
 

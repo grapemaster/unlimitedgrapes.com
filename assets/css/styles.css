@@ -19,13 +19,3 @@ p {
 a.nav-link .disabled{
   pointer-events: none;
 }
-
-.underliner {
-  width: 40%;
-  height: 1px;
-  background: -webkit-linear-gradient(
-    33deg,
-    rgba(177, 75, 236, 1) 0%,
-    rgba(1, 255, 164, 1) 100%
-  );
-}
