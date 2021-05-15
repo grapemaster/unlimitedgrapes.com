@@ -9,7 +9,7 @@ p {
 
 #social-media-link{
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 #social-media-link:hover {
@@ -21,9 +21,8 @@ a.nav-link .disabled{
 }
 
 .underliner {
-  text-align: center;
-  width: 100%;
-  height: 2px;
+  width: 40%;
+  height: 1px;
   background: -webkit-linear-gradient(
     33deg,
     rgba(177, 75, 236, 1) 0%,
