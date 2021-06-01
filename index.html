@@ -39,7 +39,10 @@
   <body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top bg-info navigation-clean border-gradient border-gradient-grey">
       <div class="container">
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1" aria-expanded="false" type="button" aria-controls="navcol-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navcol-1">
           <div class="social-media-wrapper">
             <a class="social-media-link" a target="”_blank”" href="https://twitter.com/solanagrape"><i class="fab fa-twitter-square d-xl-flex align-items-xl-center"></i> </a>
@@ -97,13 +100,13 @@
     <script type="text/javascript">
       var menuToggle = document.getElementById("navcol-1");
       var target = document.getElementById("tokenomics");
-      var bsCollapse = new bootstrap.Collapse(menuToggle);
+      var bsCollapse = $(menuToggle).collapse("hide");
 
       document.querySelector(".btn-tokenomics").addEventListener("click", function (e) {
         e.preventDefault();
         target.scrollIntoView({ behavior: "smooth" });
         if (window.screen.width < 768) {
-          bsCollapse.toggle();
+          bsCollapse.collapse("hide");
         }
       });
     </script>
