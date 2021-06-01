@@ -76,6 +76,12 @@ a.nav-link .disabled {
 
 /* Navigation Clean */
 
+.navbar {
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
 .navigation-clean {
   background: #fff;
   padding-top: 0.75rem;
